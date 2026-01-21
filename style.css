@@ -50,3 +50,10 @@ h1 {
     color: #8B0000; /* vermelho vinho para subtítulos */
     margin-top: 0;
 }
+.logo img {
+    display: block;           /* centraliza a imagem */
+    margin: 0 auto 20px auto; /* espaço abaixo da logo */
+    max-width: 200px;         /* tamanho máximo da logo */
+    height: auto;             /* mantém proporção */
+    border-radius: 10px;      /* opcional, cantos arredondados */
+}
