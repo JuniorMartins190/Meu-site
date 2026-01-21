@@ -1,24 +1,52 @@
+/* Fundo da página */
 body {
-    background-color: #d0eaff;
     font-family: Arial, sans-serif;
-    text-align: center;
-    padding-top: 50px;
+    padding: 20px;
+    background-color: #000000; /* preto */
+    color: #D8BFD8; /* lilás padrão para textos */
 }
 
+/* Título principal */
 h1 {
-    color: #003366;
+    text-align: center;
+    color: #FF0000; /* vermelho */
+    font-size: 36px;
+    margin-bottom: 30px;
 }
 
-button {
-    padding: 10px 20px;
-    font-size: 18px;
-    border: none;
-    border-radius: 10px;
+/* Menu de botões */
+.menu {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu button {
+    margin: 5px;
+    padding: 12px 20px;
+    font-size: 16px;
     cursor: pointer;
-    background-color: #007bff;
-    color: white;
+    border: none;
+    border-radius: 8px;
+    background-color: #800080; /* lilás escuro */
+    color: #D8BFD8; /* lilás claro para texto do botão */
+    transition: 0.3s;
 }
 
-button:hover {
-    background-color: #005fcc;
+.menu button:hover {
+    background-color: #A020F0; /* lilás mais vibrante ao passar o mouse */
+}
+
+/* Área do conteúdo */
+#conteudo {
+    background-color: #111111; /* quase preto para destaque do conteúdo */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #800080; /* sombra lilás */
+    color: #D8BFD8; /* lilás para textos do conteúdo */
+}
+
+/* Títulos dentro do conteúdo */
+#conteudo h2 {
+    color: #FF0000; /* vermelho para subtítulos */
+    margin-top: 0;
 }
