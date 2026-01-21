@@ -9,7 +9,7 @@ body {
 /* Título principal */
 h1 {
     text-align: center;
-    color: #FF0000; /* vermelho */
+    color: #8B0000; /* vermelho vinho */
     font-size: 36px;
     margin-bottom: 30px;
 }
@@ -47,6 +47,6 @@ h1 {
 
 /* Títulos dentro do conteúdo */
 #conteudo h2 {
-    color: #FF0000; /* vermelho para subtítulos */
+    color: #8B0000; /* vermelho vinho para subtítulos */
     margin-top: 0;
 }
