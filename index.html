@@ -2,70 +2,32 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Golden Shell Well</title>
-    <style>
-        body {
-            font-family: Arial;
-            padding: 20px;
-        }
-        .menu button {
-            margin-right: 10px;
-            padding: 10px 20px;
-            cursor: pointer;
-        }
-        #conteudo {
-            margin-top: 30px;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-        }
-    </style>
+    <title>Nilson Som Equipadora</title>
+
+    <!-- Arquivo de estilo -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Golden Shell Well — Loja de Móveis</h1>
+    <h1>Nilson Som Equipadora</h1>
 
     <!-- Botões -->
     <div class="menu">
-        <button onclick="mostrar('sofa')">Sofá Premium</button>
-        <button onclick="mostrar('mesa')">Mesa de Jantar</button>
-        <button onclick="mostrar('cama')">Cama Casal Luxo</button>
+        <button onclick="mostrar('som')">Som Automotivo</button>
+        <button onclick="mostrar('acessorios')">Acessórios</button>
+        <button onclick="mostrar('insulfilm')">Insulfilm</button>
+        <button onclick="mostrar('rastreador')">Rastreador</button>
+        <button onclick="mostrar('contato')">Contato</button>
     </div>
 
     <!-- Área que muda -->
     <div id="conteudo">
-        <h2>Escolha um móvel para ver detalhes</h2>
+        <h2>Bem-vindo à Nilson Som Equipadora</h2>
+        <p>Escolha uma categoria acima para ver mais informações.</p>
     </div>
 
-    <script>
-        function mostrar(item) {
-            let conteudo = document.getElementById("conteudo");
-
-            if (item === "sofa") {
-                conteudo.innerHTML = `
-                    <h2>Sofá Premium</h2>
-                    <p>Sofá de 3 lugares, tecido suede, super confortável.</p>
-                    <p>Preço: R$ 1.999</p>
-                `;
-            }
-
-            if (item === "mesa") {
-                conteudo.innerHTML = `
-                    <h2>Mesa de Jantar</h2>
-                    <p>Mesa de madeira maciça para 6 pessoas.</p>
-                    <p>Preço: R$ 1.499</p>
-                `;
-            }
-
-            if (item === "cama") {
-                conteudo.innerHTML = `
-                    <h2>Cama Casal Luxo</h2>
-                    <p>Cama casal queen com acabamento premium.</p>
-                    <p>Preço: R$ 2.299</p>
-                `;
-            }
-        }
-    </script>
+    <!-- Arquivo JavaScript -->
+    <script src="script.js"></script>
 
 </body>
 </html>
