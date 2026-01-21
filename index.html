@@ -2,16 +2,70 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Meu Primeiro Site</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Golden Shell Well</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+        .menu button {
+            margin-right: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        #conteudo {
+            margin-top: 30px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>Olá, Cosme!</h1>
-    <p>Este é seu primeiro site criado do zero.</p>
+    <h1>Golden Shell Well — Loja de Móveis</h1>
 
-    <button id="botao">Clique em mim</button>
+    <!-- Botões -->
+    <div class="menu">
+        <button onclick="mostrar('sofa')">Sofá Premium</button>
+        <button onclick="mostrar('mesa')">Mesa de Jantar</button>
+        <button onclick="mostrar('cama')">Cama Casal Luxo</button>
+    </div>
 
-    <script src="script.js"></script>
+    <!-- Área que muda -->
+    <div id="conteudo">
+        <h2>Escolha um móvel para ver detalhes</h2>
+    </div>
+
+    <script>
+        function mostrar(item) {
+            let conteudo = document.getElementById("conteudo");
+
+            if (item === "sofa") {
+                conteudo.innerHTML = `
+                    <h2>Sofá Premium</h2>
+                    <p>Sofá de 3 lugares, tecido suede, super confortável.</p>
+                    <p>Preço: R$ 1.999</p>
+                `;
+            }
+
+            if (item === "mesa") {
+                conteudo.innerHTML = `
+                    <h2>Mesa de Jantar</h2>
+                    <p>Mesa de madeira maciça para 6 pessoas.</p>
+                    <p>Preço: R$ 1.499</p>
+                `;
+            }
+
+            if (item === "cama") {
+                conteudo.innerHTML = `
+                    <h2>Cama Casal Luxo</h2>
+                    <p>Cama casal queen com acabamento premium.</p>
+                    <p>Preço: R$ 2.299</p>
+                `;
+            }
+        }
+    </script>
+
 </body>
 </html>
